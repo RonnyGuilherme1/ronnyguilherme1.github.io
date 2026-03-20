@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(0, 0, 0);
+  color: #b1b0b0;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+nav{
+  background-color: #141414;
+  text-align:end;
+  padding: 15px;
+  border-bottom: 1px solid rgba(44, 42, 42, 0.678);
+  box-shadow: 0 50px 250px rgba(226, 225, 225, 0.658);
+  transition: box-shadow 2s ease-out;
+
+  @starting-style{
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+}
+
+nav a{
+  color: #7b7d9e;
+  font-size: .85rem;
+  font-weight: 500;
+  position: relative;
+  transition: color .5s;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  margin: 15px;
+}
+
+a:hover{
+  border-bottom: 1px solid #161891;
+  color: #fdfdfde7;
+}
+
+nav ul{
+  list-style-type: none;
+  display:inline-flex;
+  gap: 20px;
+}
+
+.hero{
+  justify-content: center;
+  display: inline-flex;
+  width: 100vh;
+  margin-top: 200px;
+  margin-left: 250px;
+}
+
+.hero .hero-text .badge{
+  font-size: 12px;
+  margin: 15px;
+  padding: 16px;
+  border: 1px solid #ffff;
+  border-radius: 35px;
+}
+
+.hero .hero-text h1{
+  font-size: 58px;
+  margin: 35px 0 15px 0px;
+}
+
+.hero .hero-text p{
+  font-size: 14px;
+  margin: 15px;
+}
+
+.hero .hero-button{
+  margin: 35px;
+  padding: 35px;
+}
+
+.hero .code-card{
+  margin-left: 250px;
+}
