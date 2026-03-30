@@ -1,53 +1,196 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ronny Dev</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <nav id="navbar">
-        <ul class="nav-links">
-            <li>
-                <a href="#sobre">Sobre</a>
-            </li>    
-            <li>
-                <a href="#habilidades">Habilidades</a>
-            </li>   
-            <li>
-                <a href="#projetos">Projetos</a>
-            </li>
-            <li>
-                <a href="#contato">Contato</a>
-            </li>
-        </ul>
-    
-    </nav>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ronny Developer</title>
 
-    <section class="hero">
-        <div class="hero-text">
-            <span class="badge">transforme seu sonho em realidade</span>
-            <h1>Ronny<br><span>Developer</span></h1>
-            <p>Construindo soluções web com Python, Flask e JavaScript.</p>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container navbar" id="navbar">
+        <a href="#inicio" class="logo">Ronny<span>Dev</span></a>
+
+        <ul class="nav-links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section" id="inicio">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <span class="badge">Transformando ideias em soluções reais</span>
+
+            <h1>
+              Ronny <br />
+              <span class="dev">Developer</span>
+            </h1>
+
+            <p class="hero-description">
+              Construindo aplicações web com Python, Flask e JavaScript, focado
+              em interfaces limpas, organização e experiência do usuário.
+            </p>
 
             <div class="hero-buttons">
-                <button href="#projetos">Ver projetos</button>
-                <button href="#contato">Entrar em contato</button>
+              <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+              <a href="#contato" class="btn btn-secondary">Entrar em contato</a>
             </div>
-        </div>
+          </div>
 
-        <div class="code-card">
-            <pre><code>
-                dev_profile = {
-                    "nome": "Ronny",
-                    "stack": ["Python", "Flask", "JS"],
-                    "foco": "web aplicativos",
-                    "status": "aprendendo e construindo"
-                }
-            </code></pre>
+          <div class="hero-visual">
+            <div class="code-window">
+              <div class="code-header">
+                <div class="dots">
+                  <span class="dot dot-blue"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-gray"></span>
+                </div>
+                <span class="file-name">profile.py</span>
+              </div>
+
+              <pre><code><span class="py-var">dev_profile</span> <span class="py-operator">=</span> <span class="py-brace">{</span>
+                    <span class="py-key">"nome"</span><span class="py-operator">:</span> <span class="py-string">"Ronny"</span>,
+                    <span class="py-key">"stack"</span><span class="py-operator">:</span> [<span class="py-string">"Python"</span>, <span class="py-string">"Flask"</span>, <span class="py-string">"JavaScript"</span>],
+                    <span class="py-key">"foco"</span><span class="py-operator">:</span> <span class="py-string">"aplicações web"</span>,
+                    <span class="py-key">"status"</span><span class="py-operator">:</span> <span class="py-string">"aprendendo e construindo"</span>
+                    <span class="py-brace">}</span></code></pre>
+            </div>
+          </div>
         </div>
-    </section>
-    <script src="js/main.js"></script>
-</body>
+      </section>
+
+      <section class="content-section" id="sobre">
+        <div class="container">
+          <div class="section-title">
+            <span class="section-tag">Sobre</span>
+            <h2>Quem sou eu</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-card">
+              <p>
+                Sou um desenvolvedor em evolução, focado em criar aplicações web
+                organizadas, funcionais e com visual moderno. Tenho interesse em
+                back-end com Python e Flask, mas também gosto de construir
+                interfaces claras e bem estruturadas no front-end.
+              </p>
+            </div>
+
+            <div class="mini-cards">
+              <div class="mini-card">
+                <strong>Python</strong>
+                <span>Back-end e lógica</span>
+              </div>
+              <div class="mini-card">
+                <strong>Flask</strong>
+                <span>APIs e aplicações web</span>
+              </div>
+              <div class="mini-card">
+                <strong>JavaScript</strong>
+                <span>Interatividade no front-end</span>
+              </div>
+              <div class="mini-card">
+                <strong>Foco</strong>
+                <span>Projetos web reais</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="habilidades">
+        <div class="container">
+          <div class="section-title">
+            <span class="section-tag">Habilidades</span>
+            <h2>Tecnologias que utilizo</h2>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-card">
+              <h3>Front-end</h3>
+              <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="skill-card">
+              <h3>Back-end</h3>
+              <p>Python, Flask</p>
+            </div>
+            <div class="skill-card">
+              <h3>Banco de dados</h3>
+              <p>SQL e modelagem básica</p>
+            </div>
+            <div class="skill-card">
+              <h3>Objetivo</h3>
+              <p>Criar sistemas web úteis e profissionais</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="projetos">
+        <div class="container">
+          <div class="section-title">
+            <span class="section-tag">Projetos</span>
+            <h2>Alguns trabalhos</h2>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <span class="project-badge">Projeto 01</span>
+              <h3>Sistema Web</h3>
+              <p>Aplicação com foco em organização, cadastro e gestão.</p>
+            </article>
+
+            <article class="project-card">
+              <span class="project-badge">Projeto 02</span>
+              <h3>Landing Page</h3>
+              <p>
+                Página moderna com layout responsivo e identidade visual forte.
+              </p>
+            </article>
+
+            <article class="project-card">
+              <span class="project-badge">Projeto 03</span>
+              <h3>API Flask</h3>
+              <p>Estrutura de back-end para integração e consumo de dados.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="contato">
+        <div class="container">
+          <div class="section-title">
+            <span class="section-tag">Contato</span>
+            <h2>Vamos conversar</h2>
+          </div>
+
+          <div class="contact-card">
+            <p>
+              Estou aberto para oportunidades, projetos e conexões na área de
+              desenvolvimento.
+            </p>
+
+            <div class="contact-links">
+              <a href="#" class="btn btn-primary">GitHub</a>
+              <a href="#" class="btn btn-secondary">LinkedIn</a>
+              <a href="#" class="btn btn-secondary">Email</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
