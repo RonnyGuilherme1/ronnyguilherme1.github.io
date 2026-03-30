@@ -1,9 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ronny Developer</title>
+    <meta
+      name="description"
+      content="Portfólio de Ronny Guilherme, estudante de ADS, profissional de tecnologia na Conecta Ponto e Acesso e desenvolvedor em evolução com foco em sistemas, web e IA."
+    />
+    <title>Ronny Dev | Portfólio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,11 +19,17 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <nav class="container navbar" id="navbar">
+    <header class="site-header" id="topo">
+      <nav class="container navbar" aria-label="principal">
         <a href="#inicio" class="logo">Ronny<span>Dev</span></a>
 
-        <ul class="nav-links">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#habilidades">Habilidades</a></li>
           <li><a href="#projetos">Projetos</a></li>
@@ -31,17 +41,18 @@
     <main>
       <section class="hero-section" id="inicio">
         <div class="container hero-grid">
-          <div class="hero-text">
-            <span class="badge">Transformando ideias em soluções reais</span>
+          <div class="hero-text reveal">
+            <span class="badge">Tecnologia, sistemas e IA em evolução constante</span>
 
             <h1>
               Ronny <br />
               <span class="dev">Developer</span>
             </h1>
 
-            <p class="hero-description">
-              Construindo aplicações web com Python, Flask e JavaScript, focado
-              em interfaces limpas, organização e experiência do usuário.
+            <p class="hero-description code-typing-line" aria-live="polite">
+              <span class="code-prefix">&gt;</span>
+              <span id="typed-text"></span>
+              <span class="typing-cursor">|</span>
             </p>
 
             <div class="hero-buttons">
@@ -50,10 +61,10 @@
             </div>
           </div>
 
-          <div class="hero-visual">
+          <div class="hero-visual reveal">
             <div class="code-window">
               <div class="code-header">
-                <div class="dots">
+                <div class="dots" aria-hidden="true">
                   <span class="dot dot-blue"></span>
                   <span class="dot dot-yellow"></span>
                   <span class="dot dot-gray"></span>
@@ -62,11 +73,13 @@
               </div>
 
               <pre><code><span class="py-var">dev_profile</span> <span class="py-operator">=</span> <span class="py-brace">{</span>
-                    <span class="py-key">"nome"</span><span class="py-operator">:</span> <span class="py-string">"Ronny"</span>,
-                    <span class="py-key">"stack"</span><span class="py-operator">:</span> [<span class="py-string">"Python"</span>, <span class="py-string">"Flask"</span>, <span class="py-string">"JavaScript"</span>],
-                    <span class="py-key">"foco"</span><span class="py-operator">:</span> <span class="py-string">"aplicações web"</span>,
-                    <span class="py-key">"status"</span><span class="py-operator">:</span> <span class="py-string">"aprendendo e construindo"</span>
-                    <span class="py-brace">}</span></code></pre>
+  <span class="py-key">"nome"</span><span class="py-operator">:</span> <span class="py-string">"Ronny Guilherme"</span>,
+  <span class="py-key">"formacao"</span><span class="py-operator">:</span> <span class="py-string">"Téc. em DS + ADS 2º período"</span>,
+  <span class="py-key">"atuacao"</span><span class="py-operator">:</span> [<span class="py-string">"Suporte Secullum"</span>, <span class="py-string">"Desenvolvimento"</span>],
+  <span class="py-key">"stack"</span><span class="py-operator">:</span> [<span class="py-string">"Python"</span>, <span class="py-string">"PostgreSQL"</span>, <span class="py-string">"HTML"</span>, <span class="py-string">"CSS"</span>, <span class="py-string">"JS"</span>],
+  <span class="py-key">"estudando"</span><span class="py-operator">:</span> [<span class="py-string">"React"</span>, <span class="py-string">"TypeScript"</span>, <span class="py-string">"IA"</span>],
+  <span class="py-key">"status"</span><span class="py-operator">:</span> <span class="py-string">"evoluindo com projetos reais"</span>
+<span class="py-brace">}</span></code></pre>
             </div>
           </div>
         </div>
@@ -74,37 +87,38 @@
 
       <section class="content-section" id="sobre">
         <div class="container">
-          <div class="section-title">
+          <div class="section-title reveal">
             <span class="section-tag">Sobre</span>
             <h2>Quem sou eu</h2>
           </div>
 
           <div class="about-grid">
-            <div class="about-card">
+            <div class="about-card reveal">
               <p>
-                Sou um desenvolvedor em evolução, focado em criar aplicações web
-                organizadas, funcionais e com visual moderno. Tenho interesse em
-                back-end com Python e Flask, mas também gosto de construir
-                interfaces claras e bem estruturadas no front-end.
+                Sou apaixonado por tecnologia, em constante evolução e construindo projetos com foco em desenvolvimento, sistemas e IA. Tenho formação técnica em <strong>Desenvolvimento de Sistemas</strong> pela ETE Ministro Fernando Lyra e atualmente estou no <strong>2º período de ADS pela FAMEESP</strong>.
+              </p>
+
+              <p>
+                Hoje atuo com tecnologia no dia a dia na <strong>Conecta Ponto e Acesso</strong>, trabalhando com suporte técnico ao sistema Secullum e também contribuindo com a parte de desenvolvimento. Além disso, sigo participando de projetos práticos, incluindo um sistema para igreja e iniciativas com uso de Inteligência Artificial.
               </p>
             </div>
 
-            <div class="mini-cards">
+            <div class="mini-cards reveal">
               <div class="mini-card">
-                <strong>Python</strong>
-                <span>Back-end e lógica</span>
+                <strong>Trabalho atual</strong>
+                <span>Suporte técnico ao sistema Secullum na Conecta Ponto e Acesso</span>
               </div>
               <div class="mini-card">
-                <strong>Flask</strong>
-                <span>APIs e aplicações web</span>
+                <strong>Atuação</strong>
+                <span>Apoio em desenvolvimento e evolução de sistemas no dia a dia</span>
               </div>
               <div class="mini-card">
-                <strong>JavaScript</strong>
-                <span>Interatividade no front-end</span>
+                <strong>Projeto em foco</strong>
+                <span>Church ERP e aplicações com apoio de IA</span>
               </div>
               <div class="mini-card">
-                <strong>Foco</strong>
-                <span>Projetos web reais</span>
+                <strong>Formação</strong>
+                <span>Técnico em DS + ADS 2º período pela FAMEESP</span>
               </div>
             </div>
           </div>
@@ -113,58 +127,74 @@
 
       <section class="content-section" id="habilidades">
         <div class="container">
-          <div class="section-title">
+          <div class="section-title reveal">
             <span class="section-tag">Habilidades</span>
-            <h2>Tecnologias que utilizo</h2>
+            <h2>Tecnologias, estudos e próximos passos</h2>
           </div>
 
           <div class="skills-grid">
-            <div class="skill-card">
-              <h3>Front-end</h3>
-              <p>HTML, CSS, JavaScript</p>
-            </div>
-            <div class="skill-card">
-              <h3>Back-end</h3>
-              <p>Python, Flask</p>
-            </div>
-            <div class="skill-card">
-              <h3>Banco de dados</h3>
-              <p>SQL e modelagem básica</p>
-            </div>
-            <div class="skill-card">
-              <h3>Objetivo</h3>
-              <p>Criar sistemas web úteis e profissionais</p>
-            </div>
+            <article class="skill-card reveal">
+              <h3>Tecnologias com contato</h3>
+              <p>Python, PostgreSQL, HTML, CSS e JavaScript aplicados em estudos e projetos práticos.</p>
+            </article>
+
+            <article class="skill-card reveal">
+              <h3>Atualmente estudando</h3>
+              <p>JavaScript, SQL, Python e aprofundamento contínuo em construção de sistemas.</p>
+            </article>
+
+            <article class="skill-card reveal">
+              <h3>Próximos passos</h3>
+              <p>Avançar no ecossistema JavaScript com React, TypeScript e aplicações mais completas.</p>
+            </article>
+
+            <article class="skill-card reveal">
+              <h3>Interesses atuais</h3>
+              <p>Uso de IA em projetos, produtividade no desenvolvimento e soluções úteis para o dia a dia.</p>
+            </article>
           </div>
         </div>
       </section>
 
       <section class="content-section" id="projetos">
         <div class="container">
-          <div class="section-title">
+          <div class="section-title reveal">
             <span class="section-tag">Projetos</span>
-            <h2>Alguns trabalhos</h2>
+            <h2>Projetos em desenvolvimento e evolução</h2>
           </div>
 
           <div class="projects-grid">
-            <article class="project-card">
-              <span class="project-badge">Projeto 01</span>
-              <h3>Sistema Web</h3>
-              <p>Aplicação com foco em organização, cadastro e gestão.</p>
-            </article>
-
-            <article class="project-card">
-              <span class="project-badge">Projeto 02</span>
-              <h3>Landing Page</h3>
+            <article class="project-card reveal">
+              <span class="project-badge">Online</span>
+              <h3>Site de apresentação</h3>
               <p>
-                Página moderna com layout responsivo e identidade visual forte.
+                Projeto publicado e em evolução, usado como base para melhorar estrutura, visual e experiência.
               </p>
+              <div class="project-links">
+                <a href="https://site-de-apresentacao.onrender.com/" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+              </div>
             </article>
 
-            <article class="project-card">
-              <span class="project-badge">Projeto 03</span>
-              <h3>API Flask</h3>
-              <p>Estrutura de back-end para integração e consumo de dados.</p>
+            <article class="project-card reveal">
+              <span class="project-badge project-badge-private">Privado</span>
+              <h3>Sistema de estoque</h3>
+              <p>
+                Projeto interno voltado para melhorar a eficiência do estoque de peças da Conecta Ponto e Acesso. O repositório está privado por ser um projeto de trabalho e ainda não possui hospedagem pública.
+              </p>
+              <div class="project-links muted-text">
+                <span>Projeto interno da Conecta Ponto e Acesso</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <span class="project-badge">Atual</span>
+              <h3>Church ERP</h3>
+              <p>
+                Projeto atual em fase final, focado em sistema web para gestão, organização e operação de igreja.
+              </p>
+              <div class="project-links">
+                <a href="https://churcherp.up.railway.app/" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+              </div>
             </article>
           </div>
         </div>
@@ -172,25 +202,26 @@
 
       <section class="content-section" id="contato">
         <div class="container">
-          <div class="section-title">
+          <div class="section-title reveal">
             <span class="section-tag">Contato</span>
             <h2>Vamos conversar</h2>
           </div>
 
-          <div class="contact-card">
+          <div class="contact-card reveal">
             <p>
-              Estou aberto para oportunidades, projetos e conexões na área de
-              desenvolvimento.
+              Estou aberto a conexões, oportunidades e projetos para continuar evoluindo como desenvolvedor, especialmente em sistemas web, aplicações com IA e soluções que gerem valor real no dia a dia.
             </p>
 
             <div class="contact-links">
-              <a href="#" class="btn btn-primary">GitHub</a>
-              <a href="#" class="btn btn-secondary">LinkedIn</a>
-              <a href="#" class="btn btn-secondary">Email</a>
+              <a href="https://github.com/RonnyGuilherme1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub</a>
+              <a href="https://www.linkedin.com/in/ronny-guilherme-4a80371a1/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">LinkedIn</a>
+              <a href="mailto:ronnyguilherme.silva@outlook.com" class="btn btn-secondary">Email</a>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
