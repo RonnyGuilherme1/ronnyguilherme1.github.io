@@ -271,7 +271,7 @@ img {
 }
 
 .code-window {
-  width: min(100%, 500px);
+  width: min(100%, 700px);
   background: linear-gradient(
     180deg,
     rgba(0, 18, 51, 0.98),
@@ -594,7 +594,6 @@ img {
   line-height: 1.65;
 }
 
-
 .project-gallery-trigger {
   width: 100%;
   padding: 0;
@@ -604,7 +603,9 @@ img {
 }
 
 .project-gallery-trigger img {
-  transition: transform 0.28s ease, filter 0.28s ease;
+  transition:
+    transform 0.28s ease,
+    filter 0.28s ease;
 }
 
 .project-gallery-trigger:hover img {
@@ -664,7 +665,9 @@ body.lightbox-open {
   background: rgba(0, 24, 69, 0.84);
   color: var(--text-main);
   cursor: pointer;
-  transition: background 0.25s ease, transform 0.25s ease;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
 }
 
 .lightbox-close:hover,
@@ -763,17 +766,15 @@ body.lightbox-open {
   }
 }
 
+.lightbox {
+  padding: 24px 16px;
+}
 
-  .lightbox {
-    padding: 24px 16px;
-  }
-
-  .lightbox-content {
-    width: 100%;
-  }
+.lightbox-content {
+  width: 100%;
+}
 
 @media (max-width: 768px) {
-
   .lightbox {
     gap: 10px;
     align-items: center;
